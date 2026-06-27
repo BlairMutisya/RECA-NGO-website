@@ -10,61 +10,26 @@ import './Projects.css'
 const allProjects = [
   {
     id: 1, title: 'Great Rift Valley Reforestation', category: 'Reforestation',
-    location: 'Kenya', year: '2022–Ongoing', impact: '1.2M trees planted',
+    location: 'Kenya', year: '2023–Ongoing', impact: '1.2M trees planted',
     description: 'Restoring 50,000 hectares of degraded forest along the Great Rift Valley escarpment using indigenous tree species and community nurseries.',
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=700&q=80', color: '#2F7D32',
+    image: 'https://images.unsplash.com/photo-1669397137034-a9577aec5435?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', color: '#2F7D32',
   },
   {
     id: 2, title: 'Mara River Watershed Restoration', category: 'Water',
-    location: 'Kenya & Tanzania', year: '2021–Ongoing', impact: '45 water sources restored',
+    location: 'Kenya & Tanzania', year: '2024–Ongoing', impact: '5 water sources restored',
     description: 'Rehabilitating riparian ecosystems and community water infrastructure along the ecologically critical Mara River basin.',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80', color: '#4FC3F7',
+    image: 'https://plus.unsplash.com/premium_photo-1780079498977-d67a284765c0?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', color: '#4FC3F7',
   },
+
   {
-    id: 3, title: 'Community Climate Resilience Program', category: 'Climate',
-    location: 'East Africa', year: '2020–Ongoing', impact: '200+ communities reached',
-    description: 'Building grassroots climate adaptation capacity across 200+ rural communities, combining traditional knowledge with modern science.',
-    image: 'https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=700&q=80', color: '#4CAF50',
-  },
-  {
-    id: 4, title: 'Aberdare Forest Corridor Project', category: 'Reforestation',
-    location: 'Kenya', year: '2023–Ongoing', impact: '800K trees planted',
-    description: 'Creating wildlife corridors between the Aberdare Range and Mount Kenya through strategic reforestation of farmland buffer zones.',
-    image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=700&q=80', color: '#2F7D32',
-  },
-  {
-    id: 5, title: 'Uganda Wetlands Conservation', category: 'Water',
-    location: 'Uganda', year: '2022–2024', impact: '12,000 ha wetlands protected',
-    description: 'Protecting and restoring critical wetland ecosystems in the Lake Victoria basin that support millions of people and countless species.',
-    image: 'https://images.unsplash.com/photo-1439405326854-014607f694d7?w=700&q=80', color: '#4FC3F7',
-  },
-  {
-    id: 6, title: 'Green Schools Initiative', category: 'Education',
-    location: 'East Africa', year: '2021–Ongoing', impact: '80,000 students reached',
-    description: 'Integrating environmental education into school curricula and establishing school forest gardens across 400 primary schools.',
-    image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=700&q=80', color: '#0288D1',
-  },
-  {
-    id: 7, title: 'Agroforestry Livelihoods Program', category: 'Community',
-    location: 'Kenya & Rwanda', year: '2020–Ongoing', impact: '5,200 farmers trained',
-    description: 'Training smallholder farmers in regenerative agroforestry practices that increase food security while restoring degraded land.',
-    image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=700&q=80', color: '#6D4C41',
-  },
-  {
-    id: 8, title: 'Coastal Mangrove Restoration', category: 'Reforestation',
-    location: 'Kenya Coast', year: '2023–Ongoing', impact: '500 ha mangroves restored',
+    id: 3, title: 'Coastal Mangrove Restoration', category: 'Reforestation',
+    location: 'Kenya Coast', year: '2026–Ongoing', impact: '1.2 ha mangroves restored',
     description: 'Restoring mangrove ecosystems along the Kenyan coast to protect shorelines, support fisheries, and sequester carbon.',
-    image: 'https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=700&q=80', color: '#2F7D32',
-  },
-  {
-    id: 9, title: 'Youth Conservation Corps', category: 'Community',
-    location: 'Pan-Africa', year: '2022–Ongoing', impact: '1,200 youth trained',
-    description: 'A structured 12-month fellowship training the next generation of African conservation leaders in science, advocacy, and community organizing.',
-    image: 'https://images.unsplash.com/photo-1573497161161-c3e73707e25c?w=700&q=80', color: '#6D4C41',
+    image: 'https://images.unsplash.com/photo-1779399642977-7c6bfd7bc472?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', color: '#2F7D32',
   },
 ]
 
-const filters = ['All', 'Reforestation', 'Water', 'Climate', 'Education', 'Community']
+const filters = ['All', 'Reforestation', 'Water']
 
 function Projects() {
   const [active, setActive] = useState('All')

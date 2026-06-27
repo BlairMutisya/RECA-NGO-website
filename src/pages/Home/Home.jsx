@@ -27,7 +27,7 @@ function AboutPreview() {
         >
           <div className="about-preview__image-wrap">
             <img
-              src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=800&q=80"
+              src="https://images.unsplash.com/photo-1728325877250-b79003cd2dc4?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="RECA team in the field"
               loading="lazy"
             />
