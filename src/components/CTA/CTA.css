@@ -1,0 +1,104 @@
+.cta-section {
+  position: relative;
+  padding: var(--space-32) 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cta-section__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.cta-section__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(13,31,15,0.92) 0%, rgba(27,94,32,0.85) 100%);
+}
+
+.cta-section__container {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-section__content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.cta-section__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  font-weight: 900;
+  color: #fff;
+  margin: var(--space-4) 0 var(--space-6);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.cta-section__title-accent {
+  color: var(--color-gold-light);
+}
+
+.cta-section__subtitle {
+  font-size: var(--text-lg);
+  color: rgba(255,255,255,0.75);
+  line-height: 1.75;
+  margin-bottom: var(--space-10);
+}
+
+.cta-section__actions {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-8);
+}
+
+.cta-section__trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.cta-section__trust span {
+  font-size: var(--text-sm);
+  color: rgba(255,255,255,0.55);
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .cta-section {
+    padding: var(--space-20) 0;
+  }
+  .cta-section__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .cta-section__trust {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .cta-section { padding: var(--space-20) 0; }
+  .cta-section__title { font-size: clamp(1.6rem, 6vw, 2.5rem); }
+  .cta-section__subtitle { font-size: var(--text-base); }
+  .cta-section__actions { flex-direction: column; align-items: center; }
+  .cta-section__actions .btn { width: 100%; max-width: 340px; justify-content: center; }
+  .cta-section__trust { gap: var(--space-3); }
+  .cta-section__trust span { font-size: 12px; }
+}
+
+@media (max-width: 480px) {
+  .cta-section { padding: var(--space-16) 0; }
+  .cta-section__trust { flex-direction: column; gap: var(--space-2); }
+}

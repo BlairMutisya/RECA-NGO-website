@@ -1,0 +1,325 @@
+/* Contact Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+.contact-form-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: var(--color-text);
+  margin: var(--space-3) 0 var(--space-4);
+}
+
+[data-theme="dark"] .contact-form-title { color: var(--color-text-dark-mode); }
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.contact-info__heading {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-5);
+}
+
+[data-theme="dark"] .contact-info__heading { color: var(--color-text-dark-mode); }
+
+/* Quick Contact */
+.contact-quick {
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  padding: var(--space-7);
+  border: 1px solid rgba(47,125,50,0.08);
+}
+
+[data-theme="dark"] .contact-quick {
+  background: var(--color-surface-dark);
+  border-color: rgba(76,175,80,0.10);
+}
+
+.contact-quick__items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.contact-quick__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  text-decoration: none;
+  padding: var(--space-3);
+  border-radius: var(--radius-lg);
+  transition: background var(--transition-base);
+}
+
+a.contact-quick__item:hover {
+  background: rgba(47,125,50,0.06);
+}
+
+.contact-quick__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-lg);
+  background: rgba(47,125,50,0.10);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-quick__label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 2px;
+}
+
+.contact-quick__value {
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+[data-theme="dark"] .contact-quick__value { color: var(--color-text-dark-mode); }
+
+/* Social Links */
+.contact-social {
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  padding: var(--space-7);
+  border: 1px solid rgba(47,125,50,0.08);
+}
+
+[data-theme="dark"] .contact-social {
+  background: var(--color-surface-dark);
+  border-color: rgba(76,175,80,0.10);
+}
+
+.contact-social__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.contact-social__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-bg-alt);
+  text-decoration: none;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  transition: all var(--transition-base);
+}
+
+[data-theme="dark"] .contact-social__link {
+  border-color: rgba(255,255,255,0.08);
+}
+
+.contact-social__link:hover {
+  background: color-mix(in srgb, var(--social-color, var(--color-primary)) 10%, transparent);
+  border-color: color-mix(in srgb, var(--social-color, var(--color-primary)) 30%, transparent);
+  color: var(--social-color, var(--color-primary));
+  transform: translateX(4px);
+}
+
+/* Map */
+.contact-map-section {
+  width: 100%;
+}
+
+.contact-map-placeholder {
+  width: 100%;
+  height: 420px;
+  background: linear-gradient(135deg, rgba(47,125,50,0.06) 0%, rgba(79,195,247,0.06) 100%);
+  border-top: 1px solid rgba(47,125,50,0.08);
+  border-bottom: 1px solid rgba(47,125,50,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .contact-map-placeholder {
+  background: rgba(255,255,255,0.02);
+  border-color: rgba(76,175,80,0.10);
+}
+
+.contact-map-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(47,125,50,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47,125,50,0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.contact-map-placeholder__inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.contact-map-placeholder__inner svg {
+  color: var(--color-primary);
+}
+
+.contact-map-placeholder__inner h3 {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  color: var(--color-text);
+}
+
+[data-theme="dark"] .contact-map-placeholder__inner h3 {
+  color: var(--color-text-dark-mode);
+}
+
+.contact-map-placeholder__inner p {
+  color: var(--color-text-muted);
+  font-size: var(--text-base);
+}
+
+/* Offices */
+.contact-offices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.contact-office-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  padding: var(--space-7);
+  border: 1px solid rgba(47,125,50,0.08);
+  transition: all var(--transition-slow);
+}
+
+[data-theme="dark"] .contact-office-card {
+  background: var(--color-surface-dark);
+  border-color: rgba(76,175,80,0.10);
+}
+
+.contact-office-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(47,125,50,0.2);
+}
+
+.contact-office-card__flag {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-4);
+}
+
+.contact-office-card__city {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+[data-theme="dark"] .contact-office-card__city { color: var(--color-text-dark-mode); }
+
+.contact-office-card__country {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: var(--space-5);
+}
+
+.contact-office-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.contact-office-card__details li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.contact-office-card__details li svg {
+  color: var(--color-primary-light);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contact-office-card__details a {
+  color: var(--color-text-muted);
+  transition: color var(--transition-base);
+}
+
+.contact-office-card__details a:hover { color: var(--color-primary); }
+
+/* Success */
+.contact-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  text-align: center;
+  padding: var(--space-16) var(--space-8);
+  background: var(--color-surface);
+  border-radius: var(--radius-2xl);
+  border: 2px solid var(--color-primary-light);
+}
+
+[data-theme="dark"] .contact-success { background: var(--color-surface-dark); }
+.contact-success svg { color: var(--color-primary); }
+.contact-success h3 { font-family: var(--font-heading); font-size: var(--text-3xl); color: var(--color-primary); }
+.contact-success p { color: var(--color-text-muted); font-size: var(--text-lg); }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-offices { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .contact-offices { grid-template-columns: 1fr; }
+}
+
+/* ── Extra responsive ── */
+@media (max-width: 768px) {
+  .contact-grid { gap: var(--space-10); }
+  .contact-form-title { font-size: clamp(1.3rem, 5vw, 1.75rem); }
+  .contact-map-placeholder { height: 280px; }
+  .contact-map-placeholder__inner h3 { font-size: var(--text-xl); }
+  .contact-map-placeholder__inner p { font-size: var(--text-sm); }
+}
+
+@media (max-width: 480px) {
+  .contact-quick { padding: var(--space-5); }
+  .contact-quick__item { flex-direction: column; align-items: flex-start; gap: var(--space-2); }
+  .contact-social { padding: var(--space-5); }
+  .contact-office-card { padding: var(--space-5); }
+  .contact-office-card__city { font-size: var(--text-xl); }
+}
