@@ -10,13 +10,13 @@ import './Projects.css'
 const allProjects = [
   {
     id: 1, title: 'Great Rift Valley Reforestation', category: 'Reforestation',
-    location: 'Kenya', year: '2023–Ongoing', impact: '5K trees planted',
+    location: 'Kenya', year: '2023–Completed', impact: '5K trees planted',
     description: 'Restoring 1.2 hectares of degraded forest along the Great Rift Valley escarpment using indigenous tree species and community nurseries.',
     image: 'https://images.unsplash.com/photo-1669397137034-a9577aec5435?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', color: '#2F7D32',
   },
   {
     id: 2, title: 'Mara River Watershed Restoration', category: 'Water',
-    location: 'Kenya & Tanzania', year: '2024–Ongoing', impact: '5 water sources restored',
+    location: 'Kenya & Tanzania', year: '2024–Completed', impact: '5 water sources restored',
     description: 'Rehabilitating riparian ecosystems and community water infrastructure along the ecologically critical Mara River basin.',
     image: 'https://plus.unsplash.com/premium_photo-1780079498977-d67a284765c0?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', color: '#4FC3F7',
   },

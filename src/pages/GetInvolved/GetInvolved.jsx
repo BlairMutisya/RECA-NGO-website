@@ -363,7 +363,7 @@ function GetInvolved() {
                 <p className="gi-coming-soon-banner__title">Payment details being finalised</p>
                 <p className="gi-coming-soon-banner__text">
                   Our official payment channels are currently being set up. In the meantime, contact us directly to make a donation:
-                  <a href="mailto:info@reca.org"> info@reca.org</a> or <a href="tel:+254700000000"> +254 700 000 000</a>
+                  <a href="mailto:info@reca.org"> info@reca.org</a> or <a href="tel:+254700000000"> +254 757 445 233</a>
                 </p>
               </div>
             </motion.div>
@@ -394,9 +394,9 @@ function GetInvolved() {
               No prior conservation experience is required — just commitment and passion.
             </p>
             <div className="gi-volunteer-stats">
-              <div><strong>1,200+</strong><span>Active volunteers</span></div>
-              <div><strong>12</strong><span>Countries</span></div>
-              <div><strong>4</strong><span>Field locations</span></div>
+              <div><strong>500+</strong><span>Active volunteers</span></div>
+              <div><strong>3</strong><span>Countries</span></div>
+              <div><strong>3</strong><span>Field locations</span></div>
             </div>
           </motion.div>
           <motion.div
@@ -434,7 +434,7 @@ function GetInvolved() {
             </div>
             <div className="gi-partner-contact">
               <a href="tel:+254700000000" className="gi-partner-contact__item">
-                <HiPhone size={16} /> +254 700 000 000
+                <HiPhone size={16} /> +254 757 445 233
               </a>
               <a href="mailto:partnerships@reca.org" className="gi-partner-contact__item">
                 <HiMail size={16} /> partnerships@reca.org

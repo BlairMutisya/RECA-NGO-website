@@ -14,7 +14,7 @@ const bigStats = [
   { value: 500, suffix: '+', label: 'Volunteers Engaged', icon: '🤝', color: '#6D4C41' },
   { value: 500, suffix: '+', label: 'Students Educated', icon: '📚', color: '#0288D1' },
   { value: 500, suffix: '+', label: 'Farmers Trained', icon: '🌾', color: '#D4A017' },
-  { value: 2, suffix: ' ha', label: 'Land Under Restoration', icon: '🗺️', color: '#2F7D32' },
+  { value: 1.2, suffix: ' ha', label: 'Land Under Restoration', icon: '🗺️', color: '#2F7D32' },
   { value: 2, suffix: '', label: 'Policy Frameworks Influenced', icon: '📋', color: '#4CAF50' },
 ]
 
@@ -41,7 +41,7 @@ const stories = [
     id: 3,
     name: 'Amina Juma',
     location: 'Mombasa, Kenya',
-    story: 'As a fisherwoman, I watched the mangroves disappear and the fish with them. RECA\'s coastal program has brought back 500 hectares of mangroves — and our livelihoods.',
+    story: 'As a fisherwoman, I watched the mangroves disappear and the fish with them. RECA\'s coastal program has brought back 1.2 hectares of mangroves — and our livelihoods.',
     before: 'Collapsed mangrove cover, declining fish stocks',
     after: 'Restored mangroves, recovering marine ecosystem',
     initials: 'AJ',
