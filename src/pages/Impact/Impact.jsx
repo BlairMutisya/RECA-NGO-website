@@ -85,6 +85,7 @@ function Impact() {
       <Helmet>
         <title>Our Impact — RECA</title>
         <meta name="description" content="Explore RECA's measurable conservation impact — trees planted, communities supported, water sources restored, and lives changed." />
+        <link rel="canonical" href="https://www.renewedearthconservationalliance.org/impact" />
       </Helmet>
 
       {/* Hero */}

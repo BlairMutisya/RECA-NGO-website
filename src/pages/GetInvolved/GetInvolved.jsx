@@ -215,6 +215,7 @@ function GetInvolved() {
       <Helmet>
         <title>Get Involved — RECA</title>
         <meta name="description" content="Volunteer, donate, or partner with RECA. Join the movement to restore Africa's ecosystems." />
+        <link rel="canonical" href="https://www.renewedearthconservationalliance.org/get-involved" />
       </Helmet>
 
       {/* ── Hero ── */}

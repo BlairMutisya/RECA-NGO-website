@@ -122,6 +122,7 @@ function Contact() {
       <Helmet>
         <title>Contact RECA</title>
         <meta name="description" content="Get in touch with RECA — our offices in Kenya, Tanzania, and Uganda are here to help." />
+        <link rel="canonical" href="https://www.renewedearthconservationalliance.org/contact" />
       </Helmet>
 
       {/* Hero */}

@@ -30,6 +30,7 @@ function About() {
       <Helmet>
         <title>About RECA — Our Story & Mission</title>
         <meta name="description" content="Learn about RECA's founding story, mission, values, and the team driving conservation across Africa." />
+          <link rel="canonical" href="https://www.renewedearthconservationalliance.org/about" />
       </Helmet>
 
       {/* Page Hero */}

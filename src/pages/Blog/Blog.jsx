@@ -79,6 +79,7 @@ function Blog() {
       <Helmet>
         <title>Blog — RECA</title>
         <meta name="description" content="Conservation insights, field stories, and environmental science from the RECA team." />
+        <link rel="canonical" href="https://www.renewedearthconservationalliance.org/blog" />
       </Helmet>
 
       {/* Hero */}
