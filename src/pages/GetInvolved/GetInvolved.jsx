@@ -34,12 +34,12 @@ const opportunities = [
   },
 ]
 
-const donationImpact = [
-  { amount: 'KES 500',    impact: 'Plants 10 indigenous trees' },
-  { amount: 'KES 2,500',  impact: 'Trains a community water guardian' },
-  { amount: 'KES 10,000', impact: 'Restores 1 degraded water source' },
-  { amount: 'KES 50,000', impact: 'Funds a month of field research' },
-]
+// const donationImpact = [
+//   { amount: 'KES 500',    impact: 'Plants 10 indigenous trees' },
+//   { amount: 'KES 2,500',  impact: 'Trains a community water guardian' },
+//   { amount: 'KES 10,000', impact: 'Restores 1 degraded water source' },
+//   { amount: 'KES 50,000', impact: 'Funds a month of field research' },
+// ]
 
 const paymentChannels = [
   {
@@ -277,7 +277,7 @@ function GetInvolved() {
           />
 
           {/* Impact amounts */}
-          <div className="gi-impact-grid">
+          {/* <div className="gi-impact-grid">
             {donationImpact.map((item, i) => (
               <motion.div
                 key={item.amount}
@@ -293,7 +293,7 @@ function GetInvolved() {
                 <div className="gi-impact-card__impact">{item.impact}</div>
               </motion.div>
             ))}
-          </div>
+          </div> */}
 
           {/* Payment channels */}
           <motion.div

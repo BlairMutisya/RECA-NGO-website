@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { FaFacebook, FaTikTok, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa'
+import { FaFacebook, FaTiktok, FaInstagram } from 'react-icons/fa'
 import { HiMail, HiPhone, HiLocationMarker } from 'react-icons/hi'
 import logo from '../../assets/images/reca-logo.png'
 import './Footer.css'
