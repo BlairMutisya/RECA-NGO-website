@@ -40,10 +40,9 @@ const offices = [
 ]
 
 const socialLinks = [
-  { icon: FaFacebook, href: 'https://facebook.com', label: 'Facebook', color: '#1877F2' },
+  { icon: FaFacebook, href: 'https://www.facebook.com/share/1BvHg2DMSW/', label: 'Facebook', color: '#1877F2' },
   { icon: FaTiktok, href: 'https://www.tiktok.com/@renewed_earth_con?_r=1&_t=ZS-97hCztpa0hd', label: 'TikTok', color: '#000000' },
   { icon: FaInstagram, href: 'https://www.instagram.com/renewed_earth_conservation?utm_source=qr&igsh=MW5qcmFvZmY4ajVuZg==', label: 'Instagram', color: '#E1306C' },
-  { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn', color: '#0A66C2' },
 ]
 
 function ContactForm() {
