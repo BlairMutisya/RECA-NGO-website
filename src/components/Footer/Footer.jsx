@@ -27,7 +27,7 @@ const footerLinks = {
 
 const socialLinks = [
   { icon: FaFacebook, href: 'https://www.facebook.com/share/1BvHg2DMSW/', label: 'Facebook' },
-  { icon: FaTiktok, href: 'hhttps://www.tiktok.com/@renewed_earth_con?_r=1&_t=ZS-97hCztpa0hd', label: 'TikTok' },
+  { icon: FaTiktok, href: 'https://www.tiktok.com/@renewed_earth_con?_r=1&_t=ZS-97hCztpa0hd', label: 'TikTok' },
   { icon: FaInstagram, href: 'https://www.instagram.com/renewed_earth_conservation?utm_source=qr&igsh=MW5qcmFvZmY4ajVuZg==', label: 'Instagram' },
 ]
 
