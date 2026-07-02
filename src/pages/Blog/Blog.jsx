@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Helmet } from 'react-helmet-async'
+import SEO from '../../components/Shared/SEO'
 import { motion } from 'framer-motion'
 import { HiSearch, HiArrowRight, HiClock, HiUser } from 'react-icons/hi'
 import PageTransition from '../../components/Shared/PageTransition'
@@ -76,11 +76,12 @@ function Blog() {
 
   return (
     <PageTransition>
-      <Helmet>
-        <title>Blog — RECA</title>
-        <meta name="description" content="Conservation insights, field stories, and environmental science from the RECA team." />
-        <link rel="canonical" href="https://www.renewedearthconservationalliance.org/blog" />
-      </Helmet>
+      <SEO
+        title="Blog - RECA"
+        description="Read conservation insights, field stories, and environmental science updates from the RECA team."
+        path="/blog"
+        pageName="Blog"
+      />
 
       {/* Hero */}
       <section className="page-hero page-hero--blog">

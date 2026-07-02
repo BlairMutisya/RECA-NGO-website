@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Helmet } from 'react-helmet-async'
+import SEO from '../../components/Shared/SEO'
 import { motion } from 'framer-motion'
 import {
   HiLocationMarker, HiPhone, HiMail, HiClock,
@@ -119,11 +119,12 @@ function ContactForm() {
 function Contact() {
   return (
     <PageTransition>
-      <Helmet>
-        <title>Contact RECA</title>
-        <meta name="description" content="Get in touch with RECA — our offices in Kenya, Tanzania, and Uganda are here to help." />
-        <link rel="canonical" href="https://www.renewedearthconservationalliance.org/contact" />
-      </Helmet>
+      <SEO
+        title="Contact RECA"
+        description="Contact RECA in Nairobi for partnerships, volunteering, donations, media enquiries, and conservation collaboration."
+        path="/contact"
+        pageName="Contact RECA"
+      />
 
       {/* Hero */}
       <section className="page-hero page-hero--contact">

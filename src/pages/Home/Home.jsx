@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Helmet } from 'react-helmet-async'
+import SEO from '../../components/Shared/SEO'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { HiArrowRight } from 'react-icons/hi'
@@ -80,10 +80,12 @@ function AboutPreview() {
 function Home() {
   return (
     <PageTransition>
-      <Helmet>
-        <title>RECA — Renewed Earth Conservation Alliance</title>
-        <meta name="description" content="Restoring Nature. Empowering Communities. Securing Our Future. RECA is Africa's leading conservation NGO." />
-      </Helmet>
+      <SEO
+        title="RECA - Renewed Earth Conservation Alliance"
+        description="RECA restores ecosystems, supports reforestation, protects water sources, and builds climate-resilient communities across East Africa."
+        path=""
+        pageName="Home"
+      />
 
       <Hero />
       <ImpactCounter />

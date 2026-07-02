@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async'
+import SEO from '../../components/Shared/SEO'
 import { motion } from 'framer-motion'
 import PageTransition from '../../components/Shared/PageTransition'
 import SectionHeader from '../../components/Shared/SectionHeader'
@@ -27,11 +27,12 @@ const values = [
 function About() {
   return (
     <PageTransition>
-      <Helmet>
-        <title>About RECA — Our Story & Mission</title>
-        <meta name="description" content="Learn about RECA's founding story, mission, values, and the team driving conservation across Africa." />
-          <link rel="canonical" href="https://www.renewedearthconservationalliance.org/about" />
-      </Helmet>
+      <SEO
+        title="About RECA - Renewed Earth Conservation Alliance"
+        description="Learn about RECA's mission, values, leadership team, and conservation work restoring ecosystems across East Africa."
+        path="/about"
+        pageName="About RECA"
+      />
 
       {/* Page Hero */}
       <section className="about-hero">

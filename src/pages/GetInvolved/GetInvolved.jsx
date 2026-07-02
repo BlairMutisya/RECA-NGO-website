@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Helmet } from 'react-helmet-async'
+import SEO from '../../components/Shared/SEO'
 import { motion } from 'framer-motion'
 import { HiHeart, HiUsers, HiOfficeBuilding, HiArrowRight, HiCheckCircle, HiLockClosed, HiPhone, HiMail } from 'react-icons/hi'
 import { FaPaypal, FaUniversity, FaMobileAlt } from 'react-icons/fa'
@@ -212,11 +212,12 @@ function PartnerForm() {
 function GetInvolved() {
   return (
     <PageTransition>
-      <Helmet>
-        <title>Get Involved — RECA</title>
-        <meta name="description" content="Volunteer, donate, or partner with RECA. Join the movement to restore Africa's ecosystems." />
-        <link rel="canonical" href="https://www.renewedearthconservationalliance.org/get-involved" />
-      </Helmet>
+      <SEO
+        title="Get Involved - RECA"
+        description="Volunteer, donate, or partner with RECA to support ecosystem restoration and community-led conservation."
+        path="/get-involved"
+        pageName="Get Involved"
+      />
 
       {/* ── Hero ── */}
       <section className="page-hero page-hero--involved">

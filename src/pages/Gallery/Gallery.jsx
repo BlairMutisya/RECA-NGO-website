@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Helmet } from 'react-helmet-async'
+import SEO from '../../components/Shared/SEO'
 import { motion, AnimatePresence } from 'framer-motion'
 import { HiX, HiChevronLeft, HiChevronRight, HiPlay } from 'react-icons/hi'
 import PageTransition from '../../components/Shared/PageTransition'

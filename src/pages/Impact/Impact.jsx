@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async'
+import SEO from '../../components/Shared/SEO'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import CountUp from 'react-countup'
@@ -82,11 +82,12 @@ function StatCard({ stat, index }) {
 function Impact() {
   return (
     <PageTransition>
-      <Helmet>
-        <title>Our Impact — RECA</title>
-        <meta name="description" content="Explore RECA's measurable conservation impact — trees planted, communities supported, water sources restored, and lives changed." />
-        <link rel="canonical" href="https://www.renewedearthconservationalliance.org/impact" />
-      </Helmet>
+      <SEO
+        title="Impact - RECA"
+        description="See RECA's measurable conservation impact, including trees planted, water sources restored, communities supported, and volunteers engaged."
+        path="/impact"
+        pageName="Impact"
+      />
 
       {/* Hero */}
       <section className="page-hero page-hero--impact">

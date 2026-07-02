@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Helmet } from 'react-helmet-async'
+import SEO from '../../components/Shared/SEO'
 import { motion, AnimatePresence } from 'framer-motion'
 import { HiLocationMarker, HiArrowRight } from 'react-icons/hi'
 import PageTransition from '../../components/Shared/PageTransition'
@@ -40,10 +40,12 @@ function Projects() {
 
   return (
     <PageTransition>
-      <Helmet>
-        <title>Projects — RECA</title>
-        <meta name="description" content="Explore RECA's conservation projects across East Africa — reforestation, water, climate, education, and community empowerment." />
-      </Helmet>
+      <SEO
+        title="Projects - RECA"
+        description="Explore RECA conservation projects in reforestation, water conservation, ecosystem restoration, and community climate resilience."
+        path="/projects"
+        pageName="Projects"
+      />
 
       {/* Hero */}
       <section className="page-hero page-hero--projects">
