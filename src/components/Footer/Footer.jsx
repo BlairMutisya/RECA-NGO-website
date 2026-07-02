@@ -26,11 +26,9 @@ const footerLinks = {
 }
 
 const socialLinks = [
-  { icon: FaFacebook, href: 'https://facebook.com', label: 'Facebook' },
-  { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter' },
-  { icon: FaInstagram, href: 'https://instagram.com', label: 'Instagram' },
-  { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: FaYoutube, href: 'https://youtube.com', label: 'YouTube' },
+  { icon: FaFacebook, href: 'https://www.facebook.com/share/1BvHg2DMSW/', label: 'Facebook' },
+  { icon: FaTiktok, href: 'hhttps://www.tiktok.com/@renewed_earth_con?_r=1&_t=ZS-97hCztpa0hd', label: 'TikTok' },
+  { icon: FaInstagram, href: 'https://www.instagram.com/renewed_earth_conservation?utm_source=qr&igsh=MW5qcmFvZmY4ajVuZg==', label: 'Instagram' },
 ]
 
 function Footer() {
